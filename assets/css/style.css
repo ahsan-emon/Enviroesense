@@ -1,0 +1,206 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap');
+
+/********** Template CSS **********/
+:root {
+    --primary: #2ebed1;
+    --primary_light: #2ebed150;
+    --secondary: #525368;
+    --light: #E8F5E9;
+    --dark: #0f2542;
+}
+
+/* common  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+h2,h2,h3,h4,h5,h6,p,a,ul,li,hr{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+svg{
+  fill: var(--primary);
+}
+.sec_space_bg{
+  padding: 80px 0;
+}
+.title_size{
+  font-size: 50px;
+}
+.primary_color{
+  color: var(--dark);
+}
+.secondary_color{
+  color: var(--secondary);
+}
+.logo_img{
+  width: 150px;
+}
+/* header style  */
+header{
+  background-color: var(--dark);
+}
+header .navbar-nav .nav-item .nav-link.active{
+  color: #fff;
+}
+header .navbar-nav .nav-item .nav-link{
+  color: #fff;
+}
+header .contact_us_btn{
+  color: #fff;
+}
+nav.stroke .navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+nav.stroke .navbar-nav .nav-item .nav-link:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke .navbar-nav .nav-item .nav-link:hover:after {
+  width: 100%;
+}
+/* 1st section style  */
+.get_in_touch_sec1{
+  position: relative;
+}
+.get_in_touch_sec1::before {    
+  content: "";
+  background-image: url("/assets/img/young-handsome-business-man-with-laptop-office-1-scaled.jpg");
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: -1;
+}
+.get_in_touch_sec1 .header_title_cont h2{
+  font-size: 55px;
+}
+.get_in_touch_sec1 .header_title_cont p{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.get_in_touch_sec1 .form_box h6{
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  background-color: var(--primary_light);
+}
+.get_in_touch_sec1 .form_box button{
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+/* core features start  */
+.core_features{
+  background-color: var(--dark);
+  background-image: url("/assets/img/870-Converted-03.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.core_features h5{
+  color: var(--dark);
+}
+.features_card{
+  background-color: #fff;
+  padding: 25px;
+  border-bottom: 3px solid var(--primary);
+  border-radius: 3px;
+  min-height: 300px;
+}
+.features_card p{
+  font-size: 14px;
+}
+/* workforce_tracker style  */
+.workforce_tracker{
+  background-image: url("/assets/img/switch-5015530_1920-1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.workforce_tracker .title_cont_size{
+  font-size: 40px;
+}
+/* workforce_benefits style  */
+.workforce_benefits{
+  background-image: url("/assets/img/default_pattern.png");
+}
+.workforce_tracker_free{
+  background-color: var(--primary);
+}
+.workforce_tracker_free .form_box button{
+  background-color: var(--dark);
+  border: 2px solid var(--dark);
+}
+/* use_cases styel  */
+.use_cases{
+  background-color: var(--dark);
+  background-image: url("/assets/img/870-Converted-03-copy.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.use_cases .table_box{
+  padding: 40px;
+}
+.use_cases .table_box_border{
+  border: 1px solid var(--light);
+}
+.use_cases .table_top_col{
+  border-left: 1px solid var(--light);
+  border-top: 1px solid var(--light);
+  border-bottom: 1px solid var(--light);
+}
+.use_cases .table_bottom_col{
+  border-left: 1px solid var(--light);
+  border-bottom: 1px solid var(--light);
+}
+.use_cases .table_right{
+  border-right: 1px solid var(--light);
+}
+/* workforce_tracker_tool styel  */
+.workforce_tracker_tool{
+  background-image: url("/assets/img/marcin-jozwiak-oh0DITWoHi4-unsplash-1-scaled.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* ready tracking style */
+.ready_tracking .form_box button{
+  background-color: var(--dark);
+  border: 2px solid var(--dark);
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: var(--secondary);
+  opacity: .5;
+}
+/* enviroesense style  */
+.enviroesense{
+  background-color: var(--dark);
+  padding: 40px 0;
+}
+/* footer style  */
+footer{
+  background-color: var(--dark);
+}
+footer p{
+  font-size: 15px;
+}
