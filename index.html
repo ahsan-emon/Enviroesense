@@ -67,7 +67,7 @@
                             <div class="form_box">
                                 <h6 class="text-center py-2 mb-4 fw-semibold primary_color">Get in touch with us today:
                                 </h6>
-                                <form>
+                                <form onsubmit="sendEmail(); reset(); return false;">
                                     <div class="mb-3">
                                         <div class="mb-3">
                                             <input placeholder="Name" type="text" class="form-control" id="name">
@@ -652,7 +652,7 @@
                                 features and unlimited assets, teams, clients and personnel. The basic version of
                                 Workforce Tracker is always free to use.</h6>
                             <div class="form_box">
-                                <form>
+                                <form onsubmit="sendEmail(); reset(); return false;">
                                     <div class="mb-3">
                                         <div class="mb-3">
                                             <input placeholder="Name" type="text" class="form-control" id="name">
@@ -1292,7 +1292,7 @@
                             includes all powerful features and unlimited assets, teams, clients and personnel. The basic
                             version of Workforce Tracker is always free to use.</p>
                         <div class="form_box">
-                            <form>
+                            <form onsubmit="sendEmail(); reset(); return false;">
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <input placeholder="Name" type="text" class="form-control" id="name">
@@ -2047,7 +2047,25 @@
     <script>
         // Initiate the wowjs
         new WOW().init();
-
+    </script>
+    <!-- smtp host  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "example@gmail.com",
+                Password: "ruvrevplznognhkw",
+                To: 'example@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+            }).then(
+                message => alert("Message sent successfully!")
+            );
+        }
     </script>
 </body>
 
