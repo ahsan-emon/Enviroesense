@@ -1,0 +1,59 @@
+@media only screen and (max-width: 991px) {
+    .sec_space_bg{
+        padding: 60px 0;
+      }
+      .title_size{
+        font-size: 40px;
+      }
+      .get_in_touch_sec1 .header_title_cont h2{
+        font-size: 45px;
+      }
+      .navbar-light .navbar-nav .nav-link {
+        padding: 10px 10px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      .workforce_tracker .workforce_tracker_cont .title_cont_size {
+        font-size: 35px;
+      }
+      .table_border_right{
+        border-right: 1px solid var(--light);
+      }
+  }
+  @media only screen and (max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .title_size{
+        font-size: 35px;
+      }
+      .get_in_touch_sec1 .header_title_cont h2{
+        font-size: 40px;
+      }
+      .workforce_tracker .workforce_tracker_cont .title_cont_size {
+        font-size: 30px;
+      }
+  }
+  @media only screen and (max-width: 575px) {
+    .form_box{
+        width: 100%;
+    }
+    .title_size{
+        font-size: 28px;
+      }
+      .get_in_touch_sec1 .header_title_cont h2{
+        font-size: 32px;
+      }
+      .features_card{
+        text-align: center;
+        min-height: 250px;
+      }
+      .workforce_tracker .workforce_tracker_cont .title_cont_size {
+        font-size: 25px;
+      }
+      .workforce_tracker .workforce_tracker_cont h5, .workforce_tracker_tool h5 {
+        font-size: 16px;
+      }
+  }
+  

@@ -22,9 +22,9 @@
 
     <header>
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg stroke">
-                <a class="navbar-brand" href="#"><img class="img-fluid w-50" src="assets/img/logo.ico" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#"><img class="img-fluid w-50" src="assets/img/logo.ico" alt="Logo"></a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,21 +32,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#core_features">Core Features</a>
+                            <a class="nav-link menu-underline" href="#core_features">Core Features</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link menu-underline" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#benefits">Benefits</a>
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link menu-underline" href="#benefits">Benefits</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#use_classes">Use Cases</a>
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link menu-underline" href="#use_cases">Use Cases</a>
+                        </li>
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link menu-underline text-uppercase" href="#contact_us">Contact Us</a>
                         </li>
                     </ul>
-                    <a href="#contact_us">
-                        <button class="btn text-uppercase contact_us_btn">Contact us</button>
-                    </a>
                 </div>
             </nav>
         </div>
@@ -57,18 +57,21 @@
         <section class="get_in_touch_sec1 sec_space_bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-10">
                         <div class="header_title_cont">
-                            <h2 class="header_title primary_color">The most advanced, private and
+                            <h2 class="primary_color">The most advanced, private and
                                 secure <b>location sharing</b> and <b>GPS tracking application</b></h2>
                             <p class="secondary_color">Privacy-focused GPS tracking for businesses, families and friends
                             </p>
-                            <div class="form_box w-md-100 w-75">
+                            <div class="form_box">
                                 <h6 class="text-center py-2 mb-4 fw-semibold primary_color">Get in touch with us today:
                                 </h6>
                                 <form>
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" id="email"
+                                        <div class="mb-3">
+                                            <input placeholder="Name" type="text" class="form-control" id="name">
+                                        </div>
+                                        <input type="email" class="form-control" placeholder="Email" id="email"
                                             aria-describedby="emailHelp">
                                     </div>
                                     <button type="submit"
@@ -548,12 +551,14 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="features_card workforce_tracker_cont p-5">
-                            <h2 class="title_cont_size primary_color">Workforce Tracker is the most <b>secure,
+                            <h2 class="title_cont_size primary_color text-start">Workforce Tracker is the most
+                                <b>secure,
                                     private</b> and
                                 <b>respectful of
                                     employee's rights</b> of any GPS tracking application in the world.
                             </h2>
-                            <h5 class="mt-4 secondary_color">Every line of code, every option and interaction, every
+                            <h5 class="mt-4 secondary_color text-start">Every line of code, every option and
+                                interaction, every
                                 step in the
                                 communication chain
                                 is painstakingly focused to provide your company and employees with the top security
@@ -564,10 +569,11 @@
                 </div>
             </div>
         </section>
+
         <!-- workforce benefits  -->
         <section id="benefits" class="workforce_benefits sec_space_bg">
             <div class="container">
-                <div class="row">
+                <div class="row gy-4">
                     <div class="col-md-5">
                         <img src="assets/img/benefits-1024x683.jpeg" class="img-fluid h-100" alt="">
                     </div>
@@ -635,8 +641,8 @@
         <!-- workforce tracker free  -->
         <section class="workforce_tracker_free sec_space_bg">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
                         <div>
                             <h2 class="primary_color">USE WORKFORCE TRACKER <b>FREE FOR 1 MONTH</b></h2>
                             <h6 class="my-4 secondary_color">Try Workforce Tracker for Business Premium FREE for 1
@@ -644,7 +650,7 @@
                                 powerful
                                 features and unlimited assets, teams, clients and personnel. The basic version of
                                 Workforce Tracker is always free to use.</h6>
-                            <div class="form_box w-md-100 w-75">
+                            <div class="form_box">
                                 <form>
                                     <div class="mb-3">
                                         <div class="mb-3">
@@ -659,7 +665,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img src="assets/img/main-slide-06_img_en.png" class="img-fluid" alt="Img">
                     </div>
                 </div>
@@ -667,13 +673,13 @@
         </section>
 
         <!-- use cases  -->
-        <section id="use_classes" class="use_cases sec_space_bg">
+        <section id="use_cases" class="use_cases sec_space_bg">
             <div class="container">
                 <h2 class="fw-bold text-uppercase mb-md-5 mb-4 text-white title_size">
                     MANY USE CASES
                 </h2>
                 <div class="row g-0">
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_top_col">
                             <svg xmlns="http://www.w3.org/2000/svg" height="65" viewBox="0 0 569 569.54905" width="65">
                                 <path
@@ -695,8 +701,8 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <div class="table_box text-center table_top_col">
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="table_box text-center table_top_col table_border_right">
                             <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 512 512">
                                 <g>
                                     <path
@@ -716,7 +722,7 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_top_col">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="65" viewBox="0 0 64 64"
                                 width="65">
@@ -735,8 +741,8 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <div class="table_box text-center table_top_col">
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="table_box text-center table_top_col table_border_right">
                             <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 128 128">
                                 <g>
                                     <path
@@ -750,7 +756,7 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_top_col">
                             <svg xmlns="http://www.w3.org/2000/svg" height="65" viewBox="0 -24 480 480" width="65">
                                 <path
@@ -760,7 +766,7 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_box_border">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_3" data-name="Layer 3" viewBox="0 0 64 64"
                                 width="65" height="65">
@@ -781,7 +787,7 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_bottom_col">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 id="Capa_1" width="65" height="65" viewBox="0 0 512 512" xml:space="preserve">
@@ -973,8 +979,8 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <div class="table_box text-center table_bottom_col">
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="table_box text-center table_bottom_col table_border_right">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 id="Capa_1" width="65" height="65" viewBox="0 0 512.002 512.002" xml:space="preserve">
                                 <g>
@@ -1137,7 +1143,7 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_bottom_col">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xmlns:svgjs="http://svgjs.com/svgjs" width="65" height="65" x="0" y="0"
@@ -1161,8 +1167,8 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <div class="table_box text-center table_bottom_col">
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="table_box text-center table_bottom_col table_border_right">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" height="65" viewBox="0 0 512 512"
                                 width="65">
                                 <g id="XMLID_1361_">
@@ -1200,7 +1206,7 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_bottom_col">
                             <svg xmlns="http://www.w3.org/2000/svg" id="outline" viewBox="0 0 512 512" width="65"
                                 height="65">
@@ -1230,7 +1236,7 @@
                             <p class="pt-3 text-white">Construction</p>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2 col-md-3 col-6">
                         <div class="table_box text-center table_bottom_col table_right">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="65"
                                 viewBox="0 0 512.527 512.527" width="65">
@@ -1253,12 +1259,14 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="features_card workforce_tracker_cont p-5">
-                            <h2 class="title_cont_size primary_color">Workforce Tracker is the most <b>secure,
+                            <h2 class="title_cont_size primary_color text-start">Workforce Tracker is the most
+                                <b>secure,
                                     private</b> and
                                 <b>respectful of
                                     employee's rights</b> of any GPS tracking application in the world.
                             </h2>
-                            <h5 class="mt-4 secondary_color">Every line of code, every option and interaction, every
+                            <h5 class="mt-4 secondary_color text-start">Every line of code, every option and
+                                interaction, every
                                 step in the
                                 communication chain
                                 is painstakingly focused to provide your company and employees with the top security
@@ -1282,7 +1290,7 @@
                         <p class="my-4 secondary_color">Try Workforce Tracker for Business Premium FREE for 1 month,
                             includes all powerful features and unlimited assets, teams, clients and personnel. The basic
                             version of Workforce Tracker is always free to use.</p>
-                        <div class="form_box w-md-100 w-75">
+                        <div class="form_box">
                             <form>
                                 <div class="mb-3">
                                     <div class="mb-3">
@@ -2013,7 +2021,8 @@
             <div class="container">
                 <div class="text-center">
                     <img class="img-fluid logo_img" src="assets/img/logo.ico" alt="Image">
-                    <p class="text-center text-white">World’s most private and secure GPS tracking applications.</p>
+                    <p class="text-center text-white pt-2">World’s most private and secure GPS tracking applications.
+                    </p>
                 </div>
             </div>
         </section>

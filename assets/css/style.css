@@ -40,36 +40,63 @@ svg{
 .logo_img{
   width: 150px;
 }
+.form_box{
+  width: 75%;
+}
 /* header style  */
 header{
   background-color: var(--dark);
 }
-header .navbar-nav .nav-item .nav-link.active{
-  color: #fff;
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 99;
 }
-header .navbar-nav .nav-item .nav-link{
-  color: #fff;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
 }
-header .contact_us_btn{
-  color: #fff;
-}
-nav.stroke .navbar-nav .nav-item .nav-link {
+.menu-underline {
   position: relative;
 }
-nav.stroke .navbar-nav .nav-item .nav-link:after{
+.menu-underline::after {
+  content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
   width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
+  height: 5px;
+  background-color: var(--primary);
+  transition: 0.5s all ease-in-out;
 }
-nav.stroke .navbar-nav .nav-item .nav-link:hover:after {
+.menu-underline:hover::after {
   width: 100%;
+  transition: 0.2s all ease-in-out;
+}
+.menu-underline:focus::after {
+  width: 100%;
+}
+.menu-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #008fd659;
+  transition: 0.5s all ease-in-out;
+  z-index: -1;
+}
+.menu-underline:hover::before {
+  height: 100%;
+}
+.menu-underline:focus::before {
+  height: 100%;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #ffffff;
 }
 /* 1st section style  */
 .get_in_touch_sec1{
@@ -147,6 +174,9 @@ nav.stroke .navbar-nav .nav-item .nav-link:hover:after {
 .workforce_tracker_free .form_box button{
   background-color: var(--dark);
   border: 2px solid var(--dark);
+}
+.workforce_benefits .accordion-button{
+  font-weight: 600;
 }
 /* use_cases styel  */
 .use_cases{
